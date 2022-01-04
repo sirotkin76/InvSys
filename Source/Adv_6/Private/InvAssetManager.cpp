@@ -5,6 +5,13 @@
 
 #include "Items/InvItem.h"
 
+const FPrimaryAssetType UInvAssetManager::PotionItemType = TEXT("Potion");
+const FPrimaryAssetType UInvAssetManager::SkillItemType = TEXT("Skill");
+const FPrimaryAssetType UInvAssetManager::TokenItemType = TEXT("Token");
+const FPrimaryAssetType UInvAssetManager::WeaponItemType = TEXT("Weapon");
+
+
+
 UInvAssetManager& UInvAssetManager::Get()
 {
 	UInvAssetManager * This = Cast <UInvAssetManager> (GEngine->AssetManager);
@@ -19,7 +26,6 @@ UInvAssetManager& UInvAssetManager::Get()
 		return * NewObject<UInvAssetManager>();
 	}
 }
-
 UInvItem* UInvAssetManager::ForceLoadItem(const FPrimaryAssetId& PrimaryAssetId, bool bLogWarning)
 {
 	FSoftObjectPath ItemPath = GetPrimaryAssetPath(PrimaryAssetId);

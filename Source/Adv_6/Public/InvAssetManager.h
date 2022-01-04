@@ -16,6 +16,7 @@ class ADV_6_API UInvAssetManager : public UAssetManager
 	GENERATED_BODY()
 
 public:
+	
 	// Constructor and overrides
 	UInvAssetManager() {}
 

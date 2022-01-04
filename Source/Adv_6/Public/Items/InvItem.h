@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
 #include "Styling/SlateBrush.h"
+#include "InvAssetManager.h"
 #include "InvItem.generated.h"
 
 /**
@@ -16,6 +17,7 @@ class ADV_6_API UInvItem : public UPrimaryDataAsset
 	GENERATED_BODY()
 
 public:
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Item")
 	FPrimaryAssetType ItemType;
 	
