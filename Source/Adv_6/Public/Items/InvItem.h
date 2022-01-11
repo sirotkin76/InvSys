@@ -36,5 +36,13 @@ public:
 
 	/** Overridden to use saved type */
 	virtual FPrimaryAssetId GetPrimaryAssetId() const override;
-	
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item_BpPickupActor")
+	UStaticMesh * SM_Item_BpPickupActor;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item_BpPickupActor")
+	UMaterialInstance * MaterialInst_Item_BpPickupActor;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item_BpPickupActor")
+	FLinearColor ColorName_Item_BpPickupActor;
+
 };
