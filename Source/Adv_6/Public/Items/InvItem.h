@@ -38,11 +38,17 @@ public:
 	virtual FPrimaryAssetId GetPrimaryAssetId() const override;
 
 
+	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item_BpPickupActor")
+	bool bPickupActorIsActive = true;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item_BpPickupActor", meta=(EditCondition = "bPickupActorIsActive", EditConditionHides))
 	UStaticMesh * SM_Item_BpPickupActor;
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item_BpPickupActor")
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item_BpPickupActor", meta=(EditCondition = "bPickupActorIsActive", EditConditionHides))
 	UMaterialInstance * MaterialInst_Item_BpPickupActor;
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item_BpPickupActor")
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item_BpPickupActor", meta=(EditCondition = "bPickupActorIsActive", EditConditionHides))
 	FLinearColor ColorName_Item_BpPickupActor;
 
 };

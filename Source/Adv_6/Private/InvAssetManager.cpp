@@ -9,8 +9,7 @@ const FPrimaryAssetType UInvAssetManager::PotionItemType = TEXT("Potion");
 const FPrimaryAssetType UInvAssetManager::SkillItemType = TEXT("Skill");
 const FPrimaryAssetType UInvAssetManager::TokenItemType = TEXT("Token");
 const FPrimaryAssetType UInvAssetManager::WeaponItemType = TEXT("Weapon");
-
-
+const FPrimaryAssetType UInvAssetManager::ArmorItemType = TEXT("Armor");
 
 UInvAssetManager& UInvAssetManager::Get()
 {
