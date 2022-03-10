@@ -37,7 +37,14 @@ public:
 	/** Overridden to use saved type */
 	virtual FPrimaryAssetId GetPrimaryAssetId() const override;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item")
+	int32 Price;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item")
+	int32 MaxCount;
 
+	UFUNCTION(BlueprintCallable, BlueprintPure ,Category="Item")
+	bool IsStackable() const;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item_BpPickupActor")
 	bool bPickupActorIsActive = true;

@@ -14,3 +14,10 @@ FPrimaryAssetId UInvItem::GetPrimaryAssetId() const
 	// For blueprints you need to handle stripping the _C suffix
 	return FPrimaryAssetId(ItemType, GetFName());
 }
+
+bool UInvItem::IsStackable() const
+{
+	if (MaxCount > 0) return true;
+	
+	return false;
+}
