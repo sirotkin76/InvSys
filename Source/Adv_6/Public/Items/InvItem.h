@@ -8,6 +8,7 @@
 #include "InvAssetManager.h"
 #include "InvItem.generated.h"
 
+class URecipeItem;
 /**
  * 
  */
@@ -29,7 +30,10 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item")
 	FSlateBrush ItemIcon;
-
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Craft")
+	URecipeItem * Recipe;
+	
 	/** Returns the logical name, equivalent to the primary asset id */
 	UFUNCTION(BlueprintCallable, Category="Item")
 	FString GetIdentifierString();
