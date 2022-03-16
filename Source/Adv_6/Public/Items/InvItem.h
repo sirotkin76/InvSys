@@ -31,8 +31,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item")
 	FSlateBrush ItemIcon;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Craft")
-	URecipeItem * Recipe;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Item")
+	bool AddInInventory = true;
 	
 	/** Returns the logical name, equivalent to the primary asset id */
 	UFUNCTION(BlueprintCallable, Category="Item")

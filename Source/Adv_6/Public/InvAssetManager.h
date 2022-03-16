@@ -26,6 +26,8 @@ public:
 	static const FPrimaryAssetType TokenItemType;
 	static const FPrimaryAssetType WeaponItemType;
 	static const FPrimaryAssetType ArmorItemType;
+	static const FPrimaryAssetType MapItemType;
+	static const FPrimaryAssetType RecipeItemType;
 
 	/** Returns the current AssetManager object */
 	static UInvAssetManager & Get();
