@@ -12,6 +12,7 @@ const FPrimaryAssetType UInvAssetManager::WeaponItemType = TEXT("Weapon");
 const FPrimaryAssetType UInvAssetManager::ArmorItemType = TEXT("Armor");
 const FPrimaryAssetType UInvAssetManager::MapItemType = TEXT("Map");
 const FPrimaryAssetType UInvAssetManager::RecipeItemType = TEXT("Recipe");
+const FPrimaryAssetType UInvAssetManager::KeyItemType = TEXT("Key");
 
 UInvAssetManager& UInvAssetManager::Get()
 {

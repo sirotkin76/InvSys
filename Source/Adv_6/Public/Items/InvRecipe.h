@@ -17,7 +17,8 @@ public:
 	
 	UInvRecipe()
 	{
-		ItemType = UInvAssetManager::RecipeItemType;
+		ItemType = UInvAssetManager::RecipeItemType;\
+		AddInInventory = false;
 	}
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Craft")
