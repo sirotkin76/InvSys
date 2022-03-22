@@ -29,6 +29,7 @@ public:
 	static const FPrimaryAssetType MapItemType;
 	static const FPrimaryAssetType RecipeItemType;
 	static const FPrimaryAssetType KeyItemType;
+	static const FPrimaryAssetType VegetableItemType;
 
 	/** Returns the current AssetManager object */
 	static UInvAssetManager & Get();
